@@ -1,0 +1,137 @@
+.addtable {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+.addtable-sidebar {
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--second-grey);
+}
+
+.addtable-sidebar-item {
+  height: auto;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+}
+
+.addtable-sidebar-item > * {
+  height: 100%;
+  width: 100%;
+}
+
+.addtable-sidebar-item > .property-title {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.addtable-sidebar-item > .properties {
+  display: grid;
+  grid-template-columns: 11px 1fr;
+}
+
+.properties-border {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.properties-border > div {
+  height: 80%;
+  width: 3px;
+
+  background-color: var(--third-grey);
+}
+
+.addtable-body {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addtable-body-tablename {
+  margin-bottom: 16px;
+
+  height: 2.4rem;
+  width: 60%;
+
+  display: grid;
+  grid-template-columns: 1fr 2.4rem;
+
+  background-color: var(--first-grey);
+  border-radius: 8px;
+}
+
+.addtable-body-tablename input {
+  padding-left: 4px;
+
+  background-color: var(--first-grey);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.addtable-body-tablename span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addtable-body form {
+  padding: 8px;
+  height: auto;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--first-grey);
+  border-radius: 8px;
+}
+
+.addtable-body form input[type='text'] {
+  margin-bottom: 8px;
+  padding-left: 4px;
+
+  height: 2rem;
+  width: 60%;
+
+  background-color: var(--second-grey);
+  border: 1px solid var(--second-grey);
+  border-radius: 8px;
+  outline: none;
+
+  transition: border ease-in-out 0.3s;
+}
+
+.addtable-body form input[type='text']:focus {
+  border: 1px solid var(--primary);
+}
+
+.addtable-body form input[type='submit'] {
+  height: 2rem;
+  width: 60%;
+
+  color: var(--first-grey);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+}

@@ -1,0 +1,31 @@
+.dashboard-right {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-row-gap: 8px;
+}
+
+.dashboard-right .dashboard-item {
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--first-grey);
+  border-radius: 8px;
+}
+
+#recentActions {
+  display: grid;
+  grid-template-rows: calc(2rem + 16px) 1fr;
+}
+
+.recent-actions-header {
+  padding: 8px;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

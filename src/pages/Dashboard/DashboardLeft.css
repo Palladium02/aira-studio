@@ -1,0 +1,156 @@
+.dashboard-left {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 8px;
+}
+
+.dlr-1 {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-column-gap: 8px;
+}
+
+.dlr-2,
+.dlr-3 {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8px;
+}
+
+.dlr-1 > * {
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--first-grey);
+  border-radius: 8px;
+}
+
+.dlr-2 > * {
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--first-grey);
+  border-radius: 8px;
+}
+
+.dlr-3 > * {
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--first-grey);
+  border-radius: 8px;
+}
+
+#amountOfTables,
+#totalStorageUsage,
+#cpuUsage {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+#amountOfTables > * {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+}
+
+#amountOfTables > div:first-of-type {
+  color: var(--third-grey);
+  font-size: 3rem;
+}
+
+#amountOfTables > div:last-of-type {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 2px solid var(--third-grey);
+}
+
+#totalStorageUsage > * {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+}
+
+#totalStorageUsage > div:first-of-type {
+  color: var(--third-grey);
+  font-size: 3rem;
+}
+
+#totalStorageUsage > div:last-of-type {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 2px solid var(--third-grey);
+}
+
+#uptime {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#uptime > div:first-of-type {
+  margin: auto 0;
+
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 2px solid var(--third-grey);
+}
+
+#uptime > div:first-of-type > span {
+  margin-top: 16px;
+  font-size: 1.5rem;
+}
+
+#uptime > div:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--third-grey);
+  font-size: 1.5rem;
+}
+
+#cpuUsage > * {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+}
+
+#cpuUsage > div:first-of-type {
+  color: var(--third-grey);
+  font-size: 3rem;
+}
+
+#cpuUsage > div:last-of-type {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 2px solid var(--third-grey);
+}

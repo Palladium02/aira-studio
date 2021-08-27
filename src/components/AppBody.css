@@ -1,0 +1,56 @@
+.app-body {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+}
+
+.app-body > * {
+  height: 100%;
+  width: 100%;
+}
+
+.app-body > .app-sidebar {
+  padding: 4px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: var(--first-grey);
+}
+
+.app-sidebar a {
+  color: #000;
+}
+
+.app-sidebar a.sidebar-item-active .sidebar-item {
+  color: var(--primary);
+  background-color: var(--primary-transparent);
+}
+
+.app-sidebar .sidebar-item {
+  margin-bottom: 4px;
+
+  height: 3.4rem;
+  width: 3.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  transition: background-color ease-in-out 0.3s;
+}
+
+.app-sidebar .sidebar-item:hover {
+  background-color: var(--third-grey);
+}
+
+.app-pages {
+  height: 100%;
+  width: 100%;
+}

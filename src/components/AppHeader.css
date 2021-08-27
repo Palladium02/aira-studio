@@ -1,0 +1,22 @@
+.app-header {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: var(--primary);
+  color: var(--first-grey);
+}
+
+.app-header > * {
+  height: 100%;
+  width: 100%;
+}
+
+.app-header > .header-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
